@@ -1,7 +1,10 @@
+import ItemListContainer from "./components/ItemListContainer";
+
 function Main (){
     return(
         <main>
-            <p>Bienvenidos a nuestra tienda virtual</p>
+            <ItemListContainer 
+            cliente = "Lilia"/>
         </main> 
     )
 }

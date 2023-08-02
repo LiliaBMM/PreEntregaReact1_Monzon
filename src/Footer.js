@@ -1,7 +1,7 @@
 function Footer() {
     return(
        <footer>
-         <p>Copyright &copy;</p>
+         <p>&copy; Copyright 2022 - Vallita Cosméticos</p>
       </footer>   
     )
 }

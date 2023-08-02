@@ -12,7 +12,7 @@ function NavBar() {
           <Nav className="me-auto">
             <Nav.Link href="#maquillaje">Maquillaje</Nav.Link>
             <Nav.Link href="#skincare">Skincare</Nav.Link>
-            <Nav.Link href="#carrito" >Carrito <CartWidget/></Nav.Link>
+            <Nav.Link href="#carrito" > <CartWidget/></Nav.Link>
           </Nav>
         </Container>
       </Navbar>

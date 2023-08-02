@@ -1,6 +1,9 @@
 function CartWidget() {
   return (
-    <div><img src="" alt="" /></div>
+    <>
+      <img src="/cartWidget.png" alt="carrito de compraS" />
+      <p>1</p>
+    </>
   )
 }
 
