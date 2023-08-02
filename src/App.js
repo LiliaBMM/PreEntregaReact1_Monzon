@@ -1,13 +1,14 @@
 import Footer from './Footer';
 import Header from './Header';
 import Main from './Main';
-import Barra from './Barra';
+import NavBar from './components/NavBar';
+
 
 function App() {
    return (
     <>
       <Header/>
-      <Barra/>
+      <NavBar/>
       <Main/>     
       <Footer/>
     </>

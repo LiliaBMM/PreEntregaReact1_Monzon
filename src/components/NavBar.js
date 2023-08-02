@@ -1,24 +1,18 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import CartWidget from './CartWidget';
 
-function Barra() {
+function NavBar() {
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark" barra>
+      <Navbar bg="dark" data-bs-theme="dark" className="barra">
         <Container>
           <Navbar.Brand href="#inicio">Inicio</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link href="#maquillaje">Maquillaje</Nav.Link>
             <Nav.Link href="#skincare">Skincare</Nav.Link>
-            <Nav.Link href="#carrito" >
-            <img
-              src="/img/logo.svg"
-              width="30"
-              height="30"
-              className="d-inline-block align-top"
-              alt="React Bootstrap logo"
-            />Carrito</Nav.Link>
+            <Nav.Link href="#carrito" >Carrito <CartWidget/></Nav.Link>
           </Nav>
         </Container>
       </Navbar>
@@ -27,4 +21,4 @@ function Barra() {
   );
 }
 
-export default Barra;
+export default NavBar;

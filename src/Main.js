@@ -1,9 +1,7 @@
 function Main (){
-    let nombre = "Lilia"
     return(
         <main>
-            <h2>Home</h2>
-            <p>Bienvenida {nombre}</p>
+            <p>Bienvenidos a nuestra tienda virtual</p>
         </main> 
     )
 }
