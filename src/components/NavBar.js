@@ -6,7 +6,7 @@ import CartWidget from './CartWidget';
 function NavBar() {
   return (
     <>
-      <Navbar bg="light" data-bs-theme="light" className="barra">
+      <Navbar bg="light" data-bs-theme="light" className="barra" >
         <Container>
           <Navbar.Brand href="#inicio">Inicio</Navbar.Brand>
           <Nav className="me-auto">

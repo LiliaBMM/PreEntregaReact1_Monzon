@@ -1,7 +1,18 @@
-// @tailwind base;
-// @tailwind components;
-// @tailwind utilities;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+    
 
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+html, body, #root {
+    height: 100%;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+}
 h1{
     color: slateblue;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -19,4 +30,10 @@ h1{
 }
 p{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: lightcoral;
+}
+.oscuro{
+    background-color: gray;
+    color: white;
 }

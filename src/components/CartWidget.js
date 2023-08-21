@@ -5,8 +5,8 @@ function CartWidget() {
       width="30"
       height="30"
       className="d-inline-block align-top"
-      alt="carrito de compraS" />
-      <p>1</p>
+      alt="carrito de compra" />
+      <span>1</span>
     </>
   )
 }
