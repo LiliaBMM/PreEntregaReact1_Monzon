@@ -14,12 +14,11 @@ function Main (){
     return(
         <main className= {dark ? "p-2 grow bg-slate-800 text-white" : "p-2 grow bg-white"}> 
             <Routes>
-                <Route path="/" element = {<p>Inicio</p>}/>
+                <Route path="/" element = {<ItemListContainer cliente = "Lilia"/>}/>
                 <Route path="/maquillaje" element = {<p>Maquillaje</p>}/>
                 <Route path="/skincare" element = {<p>Skincare</p>}/>
                 <Route path="/carrito" element = {<p>Carrito</p>}/>
-            <ItemListContainer 
-            cliente = "Lilia"/>
+            
             <button onClick={toogleDark}>Toogle dark/light</button>
             </Routes>
            
