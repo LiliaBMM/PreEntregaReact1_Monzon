@@ -1,22 +1,16 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 import CartWidget from './CartWidget';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
   return (
     <>
-      <Navbar bg="light" data-bs-theme="light" className="barra" >
-        <Container>
-          <Navbar.Brand href="#inicio">Inicio</Navbar.Brand>
-          <Nav className="me-auto">
-            <Nav.Link href="#maquillaje">Maquillaje</Nav.Link>
-            <Nav.Link href="#skincare">Skincare</Nav.Link>
-            <Nav.Link href="#carrito" > <CartWidget/></Nav.Link>
-          </Nav>
-        </Container>
-      </Navbar>
-      <br />
+    <nav className="flex gap-4">
+      <Link to="/">Inicio</Link>
+      <Link to="/maquillaje">Maquillaje</Link>
+      <Link to="/skincare">Skincare</Link>
+      <Link to="/carrito"><CartWidget/></Link>
+    </nav>
+    <br />
     </>
   );
 }
