@@ -5,21 +5,25 @@ import {getProducto} from "../asyncMock";
 function ItemListContainer(greeting) {
 
   const [produto, setProducto] = useState([])
+  console.log(produto);
 
   useEffect(() => {
-    getProducto()
+    if(produto!==undefined){
+      console.log('ingrese aqui');
+      getProducto()
      .then(response => {
         setProducto(response)
      })
      .catch(error => {
       console.error(error);
      })
-  },[])
+    }
+  },[produto])
 
   return (
     <>
       <p>Bienvenido {greeting.cliente} a nuestra tienda</p>
-      <ItemLists produto = {produto}/>
+      <ItemLists producto = {produto}/>
     </>
   )
 }

@@ -4,7 +4,7 @@ const produto = [
         nombre:'Beauty Color Vision',
         precio:23,
         categoria:'maquillaje',
-        img:'./imagenes/beautycolorvision.PNG',
+        img:'/imagenes/beauty color vision.PNG',
         stock: 10,
         descripcion:'Sombra de ojos',
     },
@@ -13,7 +13,7 @@ const produto = [
         nombre:'Blush',
         precio: 26,
         categoria:'maquillaje',
-        img:'./imagenes/blush.PNG',
+        img:'/imagenes/blush.PNG',
         stock: 18,
         descripcion:'Rubor',
     }

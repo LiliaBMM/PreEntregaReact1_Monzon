@@ -18,10 +18,8 @@ function Main (){
                 <Route path="/maquillaje" element = {<p>Maquillaje</p>}/>
                 <Route path="/skincare" element = {<p>Skincare</p>}/>
                 <Route path="/carrito" element = {<p>Carrito</p>}/>
-            
-            <button onClick={toogleDark}>Toogle dark/light</button>
             </Routes>
-           
+            <button onClick={toogleDark}>Toogle dark/light</button>
         </main> 
     )
 }
