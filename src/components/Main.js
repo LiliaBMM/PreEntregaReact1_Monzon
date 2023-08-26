@@ -1,6 +1,7 @@
 import { useState } from "react";
 import ItemListContainer from "./ItemListContainer";
 import {Routes, Route} from "react-router-dom"
+import ItemCount from "./ItemCount"
 
 function Main (){
 
@@ -20,6 +21,7 @@ function Main (){
                 <Route path="/carrito" element = {<p>Carrito</p>}/>
             </Routes>
             <button onClick={toogleDark}>Toogle dark/light</button>
+            <ItemCount/>
         </main> 
     )
 }
