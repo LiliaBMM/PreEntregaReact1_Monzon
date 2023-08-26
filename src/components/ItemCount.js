@@ -27,6 +27,7 @@ function ItemCount ({inicial, stock, onAdd}){
             <p className="text-color-lighcoral">Cantidad: {contador}</p>
             <div>
                 <button className="border p-1 rounded" onClick={() => onAdd(contador)} disabled={!stock}>Confirmar compra</button>
+                
             </div>
             <div>
                 <button className="border p-1 rounded" onClick={resetear}>Eliminar compra</button>

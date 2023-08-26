@@ -1,29 +1,23 @@
-import { useState } from "react";
+// import { useState } from "react";
+import ItemDetailContainer from "./ItemDetailContainer";
 import ItemListContainer from "./ItemListContainer";
 import {Routes, Route} from "react-router-dom"
-import ItemCount from "./ItemCount"
 
 function Main (){
-
-    const [dark, setDark] = useState (false)
-
-
-    const toogleDark = () => {
-        setDark(!dark)
-    }
-
     return(
-        <main className= {dark ? "p-2 grow bg-slate-800 text-white" : "p-2 grow bg-white"}> 
+        <main> 
             <Routes>
                 <Route path="/" element = {<ItemListContainer cliente = "Lilia"/>}/>
-                <Route path="/maquillaje" element = {<p>Maquillaje</p>}/>
-                <Route path="/skincare" element = {<p>Skincare</p>}/>
+                <Route path="/item/:id" element = {<ItemDetailContainer/> }/>
+                <Route path="/category/:categoria" element = {<ItemListContainer/>}/>
+                <Route path="/category/:categoria" element = {<ItemListContainer/>}/>
                 <Route path="/carrito" element = {<p>Carrito</p>}/>
             </Routes>
-            <button onClick={toogleDark}>Toogle dark/light</button>
-            <ItemCount/>
         </main> 
     )
 }
 
+
+
+    
 export default Main;

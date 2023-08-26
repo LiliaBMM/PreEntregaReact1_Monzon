@@ -1,23 +1,29 @@
 import { useState, useEffect } from "react"
 import {getProductById} from "../asyncMock"
+import ItemDetail from "./ItemDetail";
+import { useParams } from "react-router-dom";
 
 
 const ItemDetailContainer = () => {
+ 
+ const {id} = useParams()
 
-    const [producto, setProducto] = useState(null)
-
+ const [producto, setProducto] = useState([])
+   
     useEffect(() => {
-        getProductById('1')
+      if (id !== undefined){
+        getProductById(id)
             .then(response => {
-                setProducto(response)
+              setProducto(response)
             })
             .catch(error => {
-                console.error(error)
+              console.error(error)
             })
-    }, [])
+      }
+    }, [id])
 
   return (
-    <div>ItemDetail {producto}</div>
+    <ItemDetail producto={producto}/>
   )
 }
 

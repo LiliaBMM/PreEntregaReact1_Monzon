@@ -1,14 +1,14 @@
 import CartWidget from './CartWidget';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function NavBar() {
   return (
     <>
     <nav className="flex gap-4">
-      <Link to="/">Inicio</Link>
-      <Link to="/maquillaje">Maquillaje</Link>
-      <Link to="/skincare">Skincare</Link>
-      <Link to="/carrito"><CartWidget/></Link>
+      <NavLink to="/">Inicio</NavLink>
+      <NavLink to={`/category/maquillaje`}>Maquillaje</NavLink>
+      <NavLink to={`/category/skincare`}>Skincare</NavLink>
+      <NavLink to="/carrito"><CartWidget/></NavLink>
     </nav>
     <br />
     </>

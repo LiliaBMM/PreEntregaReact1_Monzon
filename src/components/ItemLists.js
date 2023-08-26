@@ -1,8 +1,7 @@
 import Item from "./Item"
 
 const ItemLists = ({producto}) => {
-    console.log('producto', producto);
-
+  
     return (
         <div>
             {
